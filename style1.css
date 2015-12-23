@@ -1,0 +1,26 @@
+#contactTable{
+	color: #317EAC; 
+	background-color: #9DF5A8;
+	width: 100%;
+	border: 1px groove black;
+	padding: 10px;
+	border-collapse: collapse;
+	font-family: Verdana;
+}
+
+td, th{
+	border: 1px double black;
+	padding: 10px;
+	border-collapse: collapse;
+	font-family: Verdana;
+	text-align: center;
+}
+
+th{
+	color: #C23E4B;
+}
+h2{
+	color: #1B942B;
+	font-family: Verdana;
+	text-align: center;
+}

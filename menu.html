@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>Simple Cart</title>
+	<link href="main.css" type="text/css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="simpleCart.js"></script>
+	<script>
+		simpleCart({
+			checkout: { 
+				type: "PayPal" , 
+				email: "you@paypal.com" 
+			},
+			cartStyle: "table",
+		});	
+	</script>
+</head>
+		
+<body>
+	<a href="menu.html">
+		<div class="home">
+			<img src="images/home.jpg" class="cart_image"/>
+		</div>
+	</a>
+<div class="container">
+	<a href="cart.html">
+		<div class="cart">
+			<img src="images/cart.jpg" class="cart_image"/>		
+		</div>
+	</a>
+	<div class="simpleCart_shelfItem">
+	    <img src="images/pizza.jpg" class="item_thumb" />
+	    <h2 class="item_name"> Pizza </h2>
+		<p>Size:
+	 	<select class="item_size">
+	        <option value="Small"> Small </option>
+	        <option value="Medium"> Medium </option>
+	        <option value="Large"> Large </option>
+	    </select></p>
+	    <p>Quantity: <input type="number" value="1" min="1" max="10" class="item_Quantity"></p>
+	    <p>Price:  <span class="item_price">$10.99</span> </p>
+		<a class="item_add" href="javascript:;"> Add to Cart </a>
+	</div>
+	<div class="simpleCart_shelfItem">
+	    <img src="images/burger.jpg" class="item_thumb" />
+	    <h2 class="item_name"> Burger </h2>
+		<p>Size:
+	 	<select class="item_size">
+	        <option value="Small"> Small </option>
+	        <option value="Medium"> Medium </option>
+	        <option value="Large"> Large </option>
+	    </select></p>
+	    <p>Quantity: <input type="number" value="1" min="1" max="10" class="item_Quantity"></p>
+	    <p>Price:  <span class="item_price">$4.99</span> </p>
+		<a class="item_add" href="javascript:;"> Add to Cart </a>
+	</div>
+	<div class="simpleCart_shelfItem">
+	    <img src="images/fried_coke.jpg" class="item_thumb" />
+	    <h2 class="item_name"> Fries AND Coke </h2>
+		<p>Size:
+	 	<select class="item_size">
+	        <option value="Small"> Small </option>
+	        <option value="Medium"> Medium </option>
+	        <option value="Large"> Large </option>
+	    </select></p>
+	    <p>Quantity: <input type="number" value="1" min="1" max="10" class="item_Quantity"></p>
+	    <p>Price:  <span class="item_price">$7.99</span> </p>
+		<a class="item_add" href="javascript:;"> Add to Cart </a>
+	</div>
+		<div class="simpleCart_shelfItem">
+	    <img src="images/icecream.jpg" class="item_thumb" />
+	    <h2 class="item_name"> Icecream </h2>
+		<p>Size:
+	 	<select class="item_size">
+	        <option value="Small"> Small </option>
+	        <option value="Medium"> Medium </option>
+	        <option value="Large"> Large </option>
+	    </select></p>
+	    <p>Quantity: <input type="number" value="1" min="1" max="10" class="item_Quantity"></p>
+	    <p>Price:  <span class="item_price">$9.99</span> </p>
+		<a class="item_add" href="javascript:;"> Add to Cart </a>
+	</div>
+	<div class="foot">
+		You have purchased
+		<span class="simpleCart_quantity"></span> items  
+		<br />Total Cost is
+		<span class="simpleCart_total"></span><br />
+		<a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+	</div>
+</div>
+</body>
+</html>

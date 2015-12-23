@@ -1,0 +1,137 @@
+body{
+	background-color: #D1FFE0;
+}
+.container{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	position: static;
+}
+.cart_image{
+	width: 50px;
+	height: 50px;
+	top: 15px;
+	position: fixed;
+	
+}
+.home{
+	top: 15px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	margin-left: 150px;
+}
+.cart{
+	left: 50%;
+	margin-left: 500px;
+	top: 15px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+}
+
+.simpleCart_shelfItem{
+	display: inline-block;
+	padding: 50px;
+	position: relative;
+	border: 5px groove black;
+	margin: 50px 75px;
+	background-color: white;
+}
+
+.simpleCart_shelfItem  img{
+	width: 150px;
+	height: 150px;
+}
+
+
+.simpleCart_shelfItem.item_size{
+	position: absolute;
+	right: 30px;
+	margin-top: 2px;
+	margin-left: 50px;
+	text-align: right;
+	width: 70px;
+	display: inline-block;
+}
+
+.simpleCart_items table{
+	width: auto;
+	border: 5px solid green;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 20px;
+	color: #CC3300;
+}
+
+.simpleCart_items table.item-decrement,
+.simpleCart_items table.item-increment{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+}
+
+.simpleCart_items table td,
+.simpleCart_items table th{
+	margin: 0;
+	padding: 1px 30px;
+	border: 2px groove green;
+	border-collapse: collapse;
+}
+.simpleCart_items table.item-decrement,
+.simpleCart_items table.item-increment,
+.simpleCart_items table.item-quantity,
+.simpleCart_items table.item-remove{
+	margin: 0;
+	padding: 0;
+}
+.cartTotal .simpleCart_total{
+	position: absolute;
+	width: 100px;
+	left: 50%;
+	margin-left: 200px;
+	margin-top: 30px;
+}
+.simpleCart_shelfItem  input{
+	width: 30px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.cartTotal .simpleCart_total:before{
+	margin-right: 10px;
+	font-weight: bold;
+	content: "Total: ";
+}
+
+.item-thumb img{
+	width: 50px;
+	height: 40px;
+}
+.foot{
+	font-size: 20px;
+	color: purple;
+	text-align: center;
+	margin-left: 800px;
+	margin-right: 50px;
+	top: 150px;
+	position: fixed;
+	border: 5px groove black;
+	background-color: white;
+	padding: 50px;
+}
+
+p{
+	font-size: 20px;
+	color: brown;
+}
+input, select{
+	border: 2px solid black;
+}
+
+h2{
+	color: #FF0066;
+}

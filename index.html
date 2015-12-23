@@ -1,0 +1,91 @@
+<html>
+<head>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <title>UTDallas Comet Cafe</title>
+   <link href="firststyle.css" type="text/css" rel="stylesheet">
+   <script type="text/javascript" src="myJavascript.js"></script>
+</head>
+<body>
+ <header>
+  <div id="div2">Double click for UTD LOGO</div>
+  <img src="utd_logo.jpg" id="logo">
+  <div id="div1">UTDallas Comet Cafe</div>
+ </header>
+
+  <form>
+
+  <h2>Please register yourself before making order</h2>
+    <div id="div3"> Hello.. Welcome </div>
+     <div>
+        First Name:<br>
+        <input  id="fname" type="text" name="firstname" maxLength="20">
+     </div>
+     <div><br>
+        Last Name:<br>
+        <input id="lname" type="text" name="lastname" maxLength="20">
+     </div><br>
+
+     <div>
+        UTD Net ID:<br>
+        <input  id="netid" type="text" name="netid" maxLength="10">
+     </div>
+     <p id="p4">You have to enter <span id="span1"> </span> characters.</p>
+
+     <div id="pswd">
+        <br>Password:<br>
+        <input type="password" name="password" maxLength="20">
+     </div><br>
+   
+     <div>
+      Age:
+        <select id="age" name="age">
+            <option value="select">Select your age group</option>
+            <option value="13">13 or younger</option>
+            <option value="14">greater than 13</option>
+        </select>
+     </div>
+
+     <div id="parentInfo"><br>
+        <div>You must provide parent's information before you can order.</div><br>
+        <div>Parent's Name:<br>
+            <input type="text" name="parent_name" />
+        </div>
+        <div>Parent's Contact:<br>
+            <input type="tel" name="parent_contact" />
+        </div>
+     </div>
+       
+
+     <div><br>
+       Your Email:<br>
+        <input  id="email" type="email" name="email" placeholder="Enter a valid email address">
+     </div> 
+     <p id="p1"> <b> Thank You </b>for entering your email address. </p>
+
+     <div><br>
+        Your Phone Number: <br>
+        <input  id="phone" type="tel" name="phone_num" />
+     </div>
+     <p id="p2"> <b> Thank You </b>for entering your phone number. </p>
+     <p id="togphone"><a href="#phone">Click to Show/Hide my phone number</a></p>
+
+     <div>
+        Address:<br>
+        <input id="address" type="text" maxLength="40">
+     </div>
+     <p id="togaddress"><a href="#address">Double Click to Show/Hide my address</a></p>
+     <p id="p5">Address you entered is: <span id="span2"></span></p>
+
+    <br />
+	<button id="sub"> Submit </button><br />
+	<div id="menu">
+		<a href="menu.html">Go to menu | </a>
+		<a href="contact.html"> Contact US </a>
+	</div>
+
+ </form> 
+ 
+
+
+</body>
+</html>

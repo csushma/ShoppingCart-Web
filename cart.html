@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Simple Cart</title>
+	<link href="main.css" type="text/css" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="simpleCart.js"></script>
+	<script>
+		simpleCart({
+			checkout: { 
+				type: "PayPal" , 
+				email: "you@yours.com" 
+			},
+		cartStyle: "table",
+		cartColumns: [
+		{ view: "image", attr: "thumb", label: "Item"},
+		{ attr: "name", label: "Name"},
+		{ attr: "size", label: "Size"},
+		{ view: "currency", attr: "price", label: "Price"},
+		{ view: "decrement", label: false, text: "Less"},
+		{ attr: "quantity", label: "Qty"},
+		{ view: "increment", label: false, text:"More"},
+		{ view: "currency", attr: "total", label: "SubTotal" },
+		{ view: "remove", text: "Remove", label: false}
+	]	
+		});	
+	</script>
+</head>
+		
+<body>
+<div class="container">
+		<a href="menu.html">
+			<img src="images/home.jpg" class="cart_image"/>
+		</a>
+		<a href="cart.html">
+			<div class="cart">
+				<img src="images/cart.jpg" class="cart_image"/>	
+			</div>
+		</a>
+		<br />
+		<div class="simpleCart_items"></div>
+		<div class="cartTotal">
+			<div class="simpleCart_total"></div>
+		</div>
+</div>
+</body>
+</html>
